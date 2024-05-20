@@ -1,0 +1,30 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num[10] = {2,5,1,3,4,9,7,8,10,6}
+		inteiro dec
+		inteiro troca = 1
+
+		escreva("Vetor de entrada:\n ")
+		para(inteiro i=0; i<10; i++){
+			escreva(num[i], " ")
+		}
+		enquanto(troca == 1){
+			troca = 0
+		para(inteiro i=0; i<10 - 1; i++){
+			se(num[i] > num[i+1]){
+				dec = num[i]
+				num[i] = num[i+1]
+				num[i+1] = dec
+				troca = 1
+			}
+		}
+	}
+		escreva("\nVetor ordenado:\n ")
+		para(inteiro i=0; i<10; i++){
+			escreva(num[i], " ")
+		}
+	}
+}
